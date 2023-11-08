@@ -6,6 +6,7 @@ import MoviesListPage from './MoviesListPage/MoviesListPage';
 import MovieDetailPage from './MovieDetailPage/MovieDetailPage';
 import ActorListPage from './ActorListPage/ActorListPage';
 import NavBar from './NavBar/NavBar';
+import { movies  } from './data';
 
 
 export default function App() {
@@ -20,7 +21,7 @@ export default function App() {
           <>
             <NavBar user={user} />
             <Routes>
-              <Route path='/' element={<MoviesListPage />} />
+              <Route path='/' element={<MoviesListPage moviesArray={movies} />} />
               <Route path='/movies/:movieName' element={<MovieDetailPage />} />
               <Route path='/actors' element={<ActorListPage />} />
             </Routes>
