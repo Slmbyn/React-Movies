@@ -22,7 +22,7 @@ export default function App() {
             <NavBar user={user} />
             <Routes>
               <Route path='/' element={<MoviesListPage moviesArray={movies} />} />
-              <Route path='/movies/:movieName' element={<MovieDetailPage />} />
+              <Route path='/movies/:movieName' element={<MovieDetailPage moviesArray={movies} />} />
               <Route path='/actors' element={<ActorListPage />} />
             </Routes>
           </>
