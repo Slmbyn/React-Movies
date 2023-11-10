@@ -4,8 +4,9 @@ export default function MovieCard({ movieObj }) {
     const poster = movieObj.posterPath;
     const title = movieObj.title;
     const releaseDate = movieObj.releaseDate;
+    const titleURL = `/movies/${title}`
     return (
-        <Link to='/movies/:movieName'>
+        <Link to={titleURL}>
             <ul style={{
                 background: `URL(${poster})`,
                 backgroundSize: 'cover',
