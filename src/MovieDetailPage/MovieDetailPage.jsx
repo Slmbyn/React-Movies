@@ -33,7 +33,7 @@ import { useParams } from 'react-router-dom';
 
 export default function MovieDetailPage({ moviesArray }) {
     const { movieName } = useParams();
-    console.log(movieName)
+    // console.log(`movieName is: ${movieName}`)
     const movie = moviesArray.find((mov) => mov.title === movieName);
     return (
         <>

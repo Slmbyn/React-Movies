@@ -7,7 +7,7 @@ export default function NavBar ({ user }) {
             &nbsp; | &nbsp;
             <Link to='/actors'>Actors List</Link>
             &nbsp; | &nbsp;
-            {user}
+            <span>Welcome, {user}!</span>
         </nav>
     )
 }
