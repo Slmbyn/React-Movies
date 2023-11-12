@@ -11,7 +11,16 @@ export default function MoviesListPage ({ moviesArray }) {
     return(
         <>
             <h1>MoviesListPage</h1>
+            <div
+                style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    flexWrap: 'wrap',
+                    gap: '20px'
+                }}
+            >
                 {movieInfo}
+            </div>    
         </>
     )
 }

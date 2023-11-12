@@ -1,14 +1,6 @@
-/* .actorName {
-        background: url(https://picsum.photos/200),
-        backgroun
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat'
-} */
-
-.actorName {
-    background: url(https://picsum.photos/200);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.actorname {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: '20px';
 }

@@ -20,7 +20,9 @@ export default function ActorListPage ({ moviesArray }) {
     return(
         <>
             <h1>ActorListPage</h1>
-            <div>{actorCard}</div>
+            <div>
+                {actorCard}
+            </div>
         </>    
     )
 }

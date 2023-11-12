@@ -10,10 +10,22 @@ export default function MovieCard({ movieObj }) {
             <ul style={{
                 background: `URL(${poster})`,
                 backgroundSize: 'cover',
-                backgroundPosition: 'center'
+                backgroundPosition: 'center',
+                width: '200px',
+                height: '350px',
+                listStyle: 'none',
+                paddingLeft: '0'
             }}>
-                <li>{title}</li>
-                <li>{releaseDate}</li>
+                <li
+                    style={{
+                        background: 'rgba(255, 255, 255, 0.7',
+                    }}
+                >{title}</li>
+                <li
+                    style={{
+                        background: 'rgba(255, 255, 255, 0.7',
+                    }}
+                >{releaseDate}</li>
             </ul>
         </Link>
     )
